@@ -5,10 +5,12 @@
 /InstalledFiles
 /pkg/
 /spec/reports/
-/spec/examples.txt
+/spec/examples.txt/
 /test/tmp/
 /test/version_tmp/
 /tmp/
+# Ignore Java class files
+*.class
 
 # Used by dotenv library to load environment variables.
 # .env
