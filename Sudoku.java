@@ -112,11 +112,11 @@ public class Sudoku extends JFrame {
                         cols[j].add(Integer.parseInt(cellText));
                         grids[(i / 3) * 3 + j / 3].add(Integer.parseInt(cellText));
                         givenNums[i][j] = 1;
-                    }
-                    if (Integer.parseInt(cellText) > 9 || Integer.parseInt(cellText) < 1) {
-                        resetSudoku();
-                        JOptionPane.showMessageDialog(this, "Invalid input. Please enter numbers between 1 and 9.");
-                        return;
+                        if (Integer.parseInt(cellText) > 9 || Integer.parseInt(cellText) < 1) {
+                            resetSudoku();
+                            JOptionPane.showMessageDialog(this, "Invalid input. Please enter numbers between 1 and 9.");
+                            return;
+                        }
                     }
                 }
             }
